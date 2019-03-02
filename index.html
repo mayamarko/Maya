@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="stylesheet" type="text/css" href="style1.css" /> -->
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title>Maya</title>
+</head>
+
+<body style="height:1500px">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#CM">Maya's page</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#playlist">My Playlist</a></li>
+        <li><a href="#like">Like</a></li>
+        <li><a href="#qrcoder">QR code</a></li>
+        <li><a href="#spa">Q&A</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <style>
+    .jumbotron {
+      background-color: #32e66e;
+      color: #ffffff;
+      padding: 50px 25px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .navbar {
+      background-color: #282b2e;
+      color: #ffffff;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 16pt;
+    }
+
+    .carousel-inner img {
+      width: 80%;
+      margin: auto;
+    }
+    .carousel-caption h3 {
+      color: #fff !important;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+      }
+    }
+
+    .bg-1{
+      background-color: white;
+      color: black;
+      font-size: 17pt;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .bg-2{
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .bg-3{
+      background-color: rgb(8, 73, 104);
+      color: white;
+      font-size: 17pt;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+  </style>
+
+  <div id="CM" class="jumbotron text-center" style="margin-top:50px">
+    <h1 class="">Maya Markovich</h1>
+  </div>
+
+  <section id="about" class="container-fluid bg-1 text-center">
+    <h1 class="">About Me</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>I'm from Karmiel, Israel. My hobby is to watch televsion all day. As sad as it sounds, I really like to spend
+          the day this way.</p>
+        <img src="img12.jpg" class="img-responsive" alt="Image">
+      </div>
+      <div class="col-sm-4">
+        <p>I don't like any course in any year and i just wish that i'll finish it and go home. But i do like my
+          friends! Just need few more words.</p>
+        <img src="img11.jpg" class="img-responsive" alt="Image">
+      </div>
+      <div class="col-sm-4">
+        <p>I hope that by the time i finish the course i will be able desin websites and control the html and css stuff.
+          In this work the start was hard, but all in the internet!</p>
+        <img src="img7.jpg" class="img-responsive" alt="Image">
+      </div>
+    </div>
+
+  </section>
+
+  <section id="photos" class="bg-2 text-center">
+    <h1 class="">My Photos</h1>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="pic1.jpg" alt="My sister and I">
+          <div class="carousel-caption">
+            <h3>My sister and I</h3>
+            <p>My lovely sister</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="pic2.jpg" alt="Friends">
+          <div class="carousel-caption">
+            <h3>Friends</h3>
+            <p>With my friends in the best resturant!</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="pic3.jpg" alt="Me">
+          <div class="carousel-caption">
+            <h3>Me</h3>
+            <p>In Varna</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="playlist" class="container-fluid bg-3 text-center">
+    <h1 class="">Playlist</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLW0Oa41-FvYdv6sQannV6sC99NVYOug9B" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!--When clicking on play the playlist doesn't work!!-->
+    <br />
+    <br />
+  </section>
+
+  <section id="like" class="container-fluid bg-4 text-center">
+    <h1 class="">Like</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="qrcoder" class="container-fluid bg-5 text-center">
+    <h1 class="">QR Code</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="spa" class="container-fluid bg-6 text-center">
+    <h1 class="">Q&A</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="contact" class="container-fluid bg-7 text-center">
+    <h1 class="">Contact</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash);
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $('#menu').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
+</body>
+
+</html>
