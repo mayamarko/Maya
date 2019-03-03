@@ -173,6 +173,8 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <br />
+    <br />
   </section>
 
   <!--style for photos-->
@@ -194,6 +196,7 @@
     }
   
     .bg-2 {
+      background-color: rgb(233, 222, 200);
       color: black;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
@@ -201,7 +204,7 @@
 
   <section id="playlist" class="container-fluid bg-3 text-center">
     <h1 class="">Playlist</h1>
-    <h3 >My favorite playlists changes in rapid temp, so my now favorite playlist now is from <i class="text-capitalize">spider man - into the spider verse</i> film </h3>
+    <h3 >My favorite playlists changes in rapid temp, so my now favorite playlist is from <i class="text-capitalize">spider man - into the spider verse</i> film </h3>
     <iframe class="embed-responsive-item"
       src="https://www.youtube.com/embed/videoseries?list=PLW0Oa41-FvYdv6sQannV6sC99NVYOug9B" frameborder="0"
       allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -233,7 +236,7 @@
   <!--Style for likes-->
   <style>
       .bg-4 {
-      background-color: white;
+      background-color: rgb(255, 249, 213);
       color: black;
       font-size: 17pt;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -316,6 +319,7 @@
     }
   
     .bg-6 {
+      background-color: rgb(255, 249, 213);
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 14pt;
       text-align: left;
@@ -366,71 +370,21 @@
 <style>
     footer .glyphicon {
       font-size: 20px;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
       color: #f3a751;
+      
     }
     #end{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     </style>
     
-    <footer class="container-fluid text-center">
+    <footer class="container-fluid text-center" style="background-color: rgb(253, 245, 231);">
       <a href="#CM" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
       </a>
-      <p id="end">This is made by Maya</p> 
+      <p id="end">Made by Maya</p> 
     </footer>
-
-
-  <!--animation-->
-<style>
-.slideanim {visibility:hidden;}
-.slide {
-  /* The name of the animation */
-  animation-name: slide;
-  -webkit-animation-name: slide; 
-  /* The duration of the animation */
-  animation-duration: 1s; 
-  -webkit-animation-duration: 1s;
-  /* Make the element visible */
-  visibility: visible; 
-}
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(70%);
-  } 
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  } 
-}
-@-webkit-keyframes slide {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  } 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
-}
-</style>
-
-<script>
-$(window).scroll(function() {
-  $(".slideanim").each(function(){
-    var pos = $(this).offset().top;
-
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
-      $(this).addClass("slide");
-    }
-  });
-});
-</script>
-
 
   <script type="text/javascript">
     $(function () {
