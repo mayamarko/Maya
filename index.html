@@ -363,7 +363,8 @@
   </style>
 
   <section id="contact" class="container-fluid bg-7">
-    <h1 class="" align="center">Contact</h1>
+    <h1 style="align-items: center">Contact</h1>
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
     <div class="row">
       <div class="col-sm-5">
         <p>Contact Me</p>
@@ -383,11 +384,12 @@
         <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
+            <button class="btn btn-default btn-send pull-right" type="submit">Send</button>
           </div>
         </div>
       </div>
     </div>
+    </form>
   </section>
 
   <!--Contact style-->
