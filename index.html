@@ -15,19 +15,15 @@
 </head>
 
 <body style="height:1500px" data-spy="scroll" data-target=".navbar" data-offset="60">
+  
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+          <a class="navbar-brand" href="#CM">Maya's page</a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar"></div>
+      <!-- <div class="collapse navbar-collapse" id="myNavbar"></div> -->
       <!-- <a class="navbar-brand" href="#CM">Maya's page</a> -->
       <ul class="nav navbar-nav">
-        <li><a class="navbar-brand" href="#CM">Maya's page</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#photos">My Photos</a></li>
         <li><a href="#playlist">My Playlist</a></li>
@@ -36,7 +32,7 @@
         <li><a href="#spa">Q&A</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
+    <!-- </div> -->
     </div>
   </nav>
 
@@ -88,6 +84,8 @@
       left: 0;
       display: inline;
     } */
+
+
   </style>
 
   <!-- <script>
@@ -450,7 +448,7 @@
   <script type="text/javascript">
     $(document).scroll(function () {
       $('#menu').toggle($(this).scrollTop() > 1000)
-    });​
+    })
   </script>
 </body>
 
